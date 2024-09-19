@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Book</title>
+</head>
+<body>
+<h1>Edit Book</h1>
+<form th:action="@{/save}" method="post">
+    <input type="hidden" name="id" th:value="${book.id}"/>
+
+    <div>
+        <label for="name">Book Name:</label>
+        <input type="text" id="name" name="name" th:value="${book.name}" required><br>
+    </div>
+
+    <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" th:value="${book.author}" required><br>
+    </div>
+
+    <div>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" th:value="${book.price}" required><br>
+    </div>
+
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+
+    <input type="submit" value="Update Book">
+</form>
+<a href="/available_books">Cancel</a>
+</body>
+</html>
