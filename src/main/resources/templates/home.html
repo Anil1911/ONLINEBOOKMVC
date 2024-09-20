@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" th:href="@{/home.css}">
 </head>
 <body>
-
-<h1>Welcome to the Online Book Store</h1>
-<a th:href="@{/book_register}">Register a Book</a><br>
-<a th:href="@{/available_books}">View Available Books</a><br>
-<a th:href="@{/my_books}">My Books</a>
-
+<center>
+    <h1>Welcome to the Online <span>Book Store</span></h1>
+    <section class="border">
+        <a th:href="@{/book_register}" class="btn">Register a Book</a>
+        <br/><br/>
+        <a th:href="@{/available_books}" class="btn">View Available Books</a>
+        <br/><br/>
+        <a th:href="@{/my_books}" class="btn">My Books</a>
+    </section>
+</center>
 </body>
 </html>

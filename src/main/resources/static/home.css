@@ -1,5 +1,42 @@
+body {
+    background-image: url(https://wallpaper.forfun.com/fetch/67/6713cdaf80f67f42f50d32d20ec93c8f.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-h1{
-    text-align: center;
-    color: blue;
+section {
+    margin-top: 16%;
+}
+
+a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none ;
+}
+
+h1 {
+    color: burlywood;
+}
+
+span {
+    color: aliceblue;
+}
+
+span:hover {
+    color: antiquewhite;
+}
+
+.btn {
+    background-color: burlywood;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 12%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: bisque;
 }
